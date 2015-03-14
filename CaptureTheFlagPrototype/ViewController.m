@@ -36,7 +36,7 @@
 	ZBarImageScanner *scanner = codeReader.scanner;
 	[scanner setSymbology:ZBAR_I25 config:ZBAR_CFG_ENABLE to:0];
 	
-	[self presentViewController:codeReader animated:YES completion:nil];
+	[self presentViewController:codeReader animated:NO completion:nil];
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
@@ -47,7 +47,7 @@
 		break;
 	}
 	
-	[picker dismissViewControllerAnimated:YES completion:^{
+	[picker dismissViewControllerAnimated:NO completion:^{
 		[self dataScanEnded:symbol.data];
 	}];
 }
@@ -69,6 +69,7 @@
 	[request setHTTPBody:postData];
  
 	[NSURLConnection connectionWithRequest:request delegate:self];
+	self.textView.text = @"Envoi de la requete...";
 }
 
 #pragma mark NSURLConnection Delegate Methods
@@ -87,10 +88,12 @@
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
 	NSString *responseString = [NSString stringWithUTF8String:[_responseData bytes]];
 	NSLog(@"Request succeeded: %@", responseString);
+	self.textView.text = responseString;
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
 	NSLog(@"Request failed");
+	self.textView.text = @"La requete a echoue.";
 }
 
 @end

@@ -11,6 +11,8 @@
 
 @interface ViewController : UIViewController <ZBarReaderDelegate>
 
+@property (weak, nonatomic) IBOutlet UITextView *textView;
+
 - (IBAction)scanButtonPressed:(id)sender;
 
 @end
