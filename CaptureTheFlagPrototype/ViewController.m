@@ -86,7 +86,7 @@
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
-	NSString *responseString = [NSString stringWithUTF8String:[_responseData bytes]];
+	NSString *responseString = [[NSString alloc] initWithData:self.responseData encoding:NSUTF8StringEncoding];
 	NSLog(@"Request succeeded: %@", responseString);
 	self.textView.text = responseString;
 }
