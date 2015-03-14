@@ -19,6 +19,13 @@
 		E93B1D0F1AB45232002EE16E /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = E93B1D0A1AB45231002EE16E /* zbar-help.html */; };
 		E93B1D101AB45232002EE16E /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = E93B1D0B1AB45231002EE16E /* zbar-helpicons.png */; };
 		E93B1D111AB45232002EE16E /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = E93B1D0C1AB45231002EE16E /* zbar-samples.png */; };
+		E93B1D131AB4530C002EE16E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E93B1D121AB4530C002EE16E /* libiconv.dylib */; };
+		E93B1D151AB45317002EE16E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E93B1D141AB45317002EE16E /* AVFoundation.framework */; };
+		E93B1D171AB4531D002EE16E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E93B1D161AB4531D002EE16E /* CoreGraphics.framework */; };
+		E93B1D191AB45326002EE16E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E93B1D181AB45326002EE16E /* CoreMedia.framework */; };
+		E93B1D1B1AB4532C002EE16E /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E93B1D1A1AB4532C002EE16E /* CoreAudio.framework */; };
+		E93B1D1D1AB45332002EE16E /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E93B1D1C1AB45332002EE16E /* CoreVideo.framework */; };
+		E93B1D1F1AB4533A002EE16E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E93B1D1E1AB4533A002EE16E /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +77,13 @@
 		E93B1D0A1AB45231002EE16E /* zbar-help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "zbar-help.html"; sourceTree = "<group>"; };
 		E93B1D0B1AB45231002EE16E /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
 		E93B1D0C1AB45231002EE16E /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
+		E93B1D121AB4530C002EE16E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		E93B1D141AB45317002EE16E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E93B1D161AB4531D002EE16E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E93B1D181AB45326002EE16E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		E93B1D1A1AB4532C002EE16E /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		E93B1D1C1AB45332002EE16E /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		E93B1D1E1AB4533A002EE16E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +91,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E93B1D1F1AB4533A002EE16E /* QuartzCore.framework in Frameworks */,
+				E93B1D1D1AB45332002EE16E /* CoreVideo.framework in Frameworks */,
+				E93B1D1B1AB4532C002EE16E /* CoreAudio.framework in Frameworks */,
+				E93B1D191AB45326002EE16E /* CoreMedia.framework in Frameworks */,
+				E93B1D171AB4531D002EE16E /* CoreGraphics.framework in Frameworks */,
+				E93B1D151AB45317002EE16E /* AVFoundation.framework in Frameworks */,
+				E93B1D131AB4530C002EE16E /* libiconv.dylib in Frameworks */,
 				E93B1D0D1AB45232002EE16E /* libzbar.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +118,7 @@
 				E93B1CEF1AB45231002EE16E /* ZBarSDK */,
 				E93B1CC81AB450C9002EE16E /* CaptureTheFlagPrototype */,
 				E93B1CE21AB450C9002EE16E /* CaptureTheFlagPrototypeTests */,
+				E93B1D201AB453F5002EE16E /* Frameworks */,
 				E93B1CC71AB450C9002EE16E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -213,6 +235,20 @@
 				E93B1D0C1AB45231002EE16E /* zbar-samples.png */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		E93B1D201AB453F5002EE16E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E93B1D1E1AB4533A002EE16E /* QuartzCore.framework */,
+				E93B1D1C1AB45332002EE16E /* CoreVideo.framework */,
+				E93B1D1A1AB4532C002EE16E /* CoreAudio.framework */,
+				E93B1D181AB45326002EE16E /* CoreMedia.framework */,
+				E93B1D161AB4531D002EE16E /* CoreGraphics.framework */,
+				E93B1D141AB45317002EE16E /* AVFoundation.framework */,
+				E93B1D121AB4530C002EE16E /* libiconv.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -444,6 +480,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CaptureTheFlagPrototype/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -458,6 +495,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CaptureTheFlagPrototype/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

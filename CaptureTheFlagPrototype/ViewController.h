@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZBarSDK.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <ZBarReaderDelegate>
 
+- (IBAction)scanButtonPressed:(id)sender;
 
 @end
 
