@@ -284,6 +284,7 @@
 				TargetAttributes = {
 					E93B1CC51AB450C9002EE16E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = V2K8NE742A;
 					};
 					E93B1CDE1AB450C9002EE16E = {
 						CreatedOnToolsVersion = 6.2;
@@ -542,6 +543,7 @@
 				E93B1CEB1AB450C9002EE16E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E93B1CEC1AB450C9002EE16E /* Build configuration list for PBXNativeTarget "CaptureTheFlagPrototypeTests" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +552,7 @@
 				E93B1CEE1AB450C9002EE16E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
